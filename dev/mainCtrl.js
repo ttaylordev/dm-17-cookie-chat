@@ -8,8 +8,8 @@
       });
     };
 
-    $scope.postMessage = function(message) {
-      msgService.postMessage(message).then(function(response) {
+    $scope.postMsg = function(message) {
+      msgService.postMsg(message).then(function(response) {
         $scope.message = '';
       });
     };
@@ -32,10 +32,10 @@
     //uncomment this code when your getMessages function is finished
     //This goes and gets new data every second, which mimicking a chat room experience.
 
-    // setInterval(function() {
-    //   $scope.getMessages();
-    //
-    // }, 1500)
+    setInterval(function() {
+      $scope.getMessage();
+    
+    }, 3000)
 
   }]);
 })();

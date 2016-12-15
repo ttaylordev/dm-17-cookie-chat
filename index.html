@@ -13,7 +13,7 @@
     <h1> DevMountain Chat Room </h1>
       <input class="form-control text-box" type="text" ng-model="filterChat" placeholder="filter chats">
       
-    <form ng-submit="postMessage(message)">
+    <form ng-submit="postMsg(message)">
       <input class="form-control text-box" type="text" ng-model="message" placeholder="Message">
     </form>
 
@@ -24,7 +24,7 @@
 
   </div>
 
-  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+  <script src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.0/angular.js"></script> -->
   <script src="./dist/scripts/bundle.js"></script>
