@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('chatroom', []).config(function($httpProvider){
+  angular.module('chatroom', []).config(['$httpProvider', function($httpProvider){
     
-  });
-}());
+  }]);
+})();
